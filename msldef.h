@@ -10,19 +10,6 @@
 #define _MSL       ::msl::
 #define _STD       ::std::
 
-// STL like verifying
-// #define _MSL_REPORT_ERROR (mesg)        \
-//     do {}                               \
-//     while (false)                       
-
-
-// #define _MSL_VERIFY (cond, mesg)        \ 
-//     do {                                \
-//         if (cond) { /* do nothing */    \
-//         } else {                        \
-//             _MSL_REPORT_ERROR(mesg);    \
-//         }                               \
-//     } while (false)                      
 
 _MSL_BEGIN
 inline void _MSL_REPORT_ERROR_f (const char* mesg) noexcept {
